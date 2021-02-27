@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+.card__input {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__input input {
+  margin-bottom: 15px;
+}
+
+.card__input #text {
+  padding: 15px 0px;
+}
+
+.card__input button {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.tasks__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.newBtn {
+  color: aqua;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+.card__input{
+   
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    input{
+        margin-bottom: 15px;
+    }
+    #text{
+        padding: 15px 0px;
+    }
+    button{
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+.tasks__container{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+flex-direction: column;
+margin-top: 30px;
+}
+.newBtn{
+    color: aqua;
+}
