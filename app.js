@@ -6,14 +6,9 @@
 addButton.addEventListener('click',()=>{
     let textTitle = InputTitle.value
     let textBody = inputTasks.value
-    if(!textBody  || !textTitle){
-        return new Error(alert('Заполните поля !'))
-        
-    }else{
-        func(textTitle,textBody)
+    func(textTitle,textBody)
         InputTitle.value = ''
         inputTasks.value = ''
-    }
 })
 
  function func(title,text){
