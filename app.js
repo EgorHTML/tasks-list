@@ -28,8 +28,8 @@ div.innerHTML = `
 <button class="remove__btn">delete</button>
 </div>
 `;
-div.addEventListener('click',(e)=>{
- if(e.target.classList.contains('remove__btn')){
+div.addEventListener('click',({target})=>{
+ if(target.classList.contains('remove__btn')){
     deleteBlock(div)
  }
 })
@@ -76,8 +76,8 @@ function saveInArr(){
     </div>
     `;
     container.appendChild(div)
-    div.addEventListener('click',(e)=>{
-        if(e.target.classList.contains('remove__btn')){
+    div.addEventListener('click',({target})=>{
+        if(target.classList.contains('remove__btn')){
            deleteBlock(div)
         }
        })
