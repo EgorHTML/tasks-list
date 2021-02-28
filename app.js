@@ -33,7 +33,6 @@ div.addEventListener('click',(e)=>{
     deleteBlock(div)
  }
 })
- 
 
 fragment.appendChild(div)
 container.appendChild(fragment)
@@ -64,7 +63,7 @@ function saveInArr(){
    if (localStorage.getItem('tasks')){
      tasks = JSON.parse(localStorage.getItem('tasks'));
     }
-function local(arrOfTasks){
+(function local(arrOfTasks){
   const  container = document.querySelector('.tasks__container')
   
   
@@ -85,8 +84,7 @@ function local(arrOfTasks){
        })
   })
   
-}
-if(typeof tasks[0]==='object'){
-    local(tasks)
-}
+})(tasks)
+
+
 
