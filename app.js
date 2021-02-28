@@ -3,7 +3,8 @@
  addButton = document.querySelector('button'),
  container = document.querySelector('.tasks__container')
  
-addButton.addEventListener('click',()=>{
+addButton.addEventListener('click',addContentToContainer)
+function addContentToContainer(){
     let textTitle = InputTitle.value
     let textBody = inputTasks.value
     if(!textBody  || !textTitle){
@@ -14,8 +15,7 @@ addButton.addEventListener('click',()=>{
         InputTitle.value = ''
         inputTasks.value = ''
     }
-})
-
+}
  function func(title,text){
 
 let fragment = document.createDocumentFragment()
