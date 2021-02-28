@@ -50,7 +50,6 @@ function saveInArr(){
         return{
             title:item.querySelector('.card__output').querySelector('.out__title').textContent,
             textBody:item.querySelector('.card__output').querySelector('.text__out').textContent,
-            id:Math.random()
         }
     })
    
